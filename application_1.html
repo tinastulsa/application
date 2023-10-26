@@ -1,1 +1,150 @@
-https://github.com/tinastulsa/application.git
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+/* Minimalist-style form container */
+.rendered-form {
+    background-color: #EBE4D7; /* White background */
+    border: 1px solid #ccc; /* Light gray border */
+    padding: 20px;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    box-sizing: border-box; /* Ensure padding is included in width */
+}
+.formbuilder-text-label, .formbuilder-text, .formbuilder-select, .formbuilder-number, 
+    .formbuilder-textarea {
+    background-color: royalblue;
+    color: white;
+
+}
+
+/* Capitalize and add letter spacing for all text */
+body {
+    text-transform: uppercase;
+    letter-spacing: 2px; /* Add letter spacing */
+    font-family: monospace;
+    background-image: url('/Users/tyler/Documents/GitHub/application/tinas_1.png');
+    background-repeat: repeat; /* Set to repeat the image */
+    background-attachment: fixed; /* Keeps the background fixed while scrolling */
+    background-size: 50% auto;
+    font-weight: bold;
+}
+
+/* Minimalist-style input fields with spacing */
+input[type="text"], input[type="email"], input[type="number"], input[type="file"], select, textarea {
+    background-color: #fff; /* White background */
+    border: 1px solid #ccc; /* Light gray border */
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 10px; /* Add spacing between input fields */
+    box-sizing: border-box; /* Ensure padding is included in width */
+    text-transform: none; /* Keep text in input fields as is */
+    letter-spacing: normal; /* Reset letter spacing for input fields */
+    font-family: monospace;
+}
+
+option {
+    font-family: monospace;
+}
+
+/* Minimalist-style submit button */
+input[type="submit"] {
+    background-color: #fff; /* White button background */
+    border: 1px solid #ccc; /* Light gray border */
+    padding: 12px 20px;
+    font-family: monospace;, sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #333; /* Dark gray text color */
+    width: 100%;
+}
+    </style>
+</head>
+<body>
+<div class="rendered-form">
+    <div class="">
+        <p id="control-6142251">We're excited about your interest in joining Tina's! All our positions are full time, and we take work-life balance seriously, with our team enjoying every Monday and Tuesday off. We'll be scheduling interviews over the next few weeks, so please feel free to reach out to hello@tinastulsa.com if you have any questions or need further information.<br>-Tyler &amp; Krystle</p></div>
+    <div class="formbuilder-text form-group field-name">
+        <label for="name" class="formbuilder-text-label">What's your first and last name?
+            <span class="formbuilder-required">*</span></label>
+        <input type="text" class="form-control" name="name" id="name" required="required" aria-required="true">
+    </div>
+    <div class="formbuilder-text form-group field-friends">
+        <label for="friends" class="formbuilder-text-label">What do your friends call you?
+            <br>
+        </label>
+        <input type="text" class="form-control" name="friends" id="friends">
+    </div>
+    <div class="formbuilder-text form-group field-email">
+        <label for="email" class="formbuilder-text-label">What's the best e-mail to reach you at?
+            <span class="formbuilder-required">*</span></label>
+        <input type="email" class="form-control" name="email" id="email" required="required" aria-required="true">
+    </div>
+    <div class="formbuilder-select form-group field-position">
+        <label for="position" class="formbuilder-select-label">What position are you applying for?
+            <span class="formbuilder-required">*</span></label>
+        <select class="form-control" name="position" id="position" required="required" aria-required="true">
+            <option value="bartender" selected="true" id="position-0">Bartender</option>
+            <option value="cook" id="position-1">Cook</option>
+            <option value="both" id="position-2">Both</option>
+        </select>
+    </div>
+    <div class="formbuilder-number form-group field-xp">
+        <label for="xp" class="formbuilder-number-label">How many years experience do you have?
+            <span class="formbuilder-required">*</span></label>
+        <input type="number" class="form-control" name="xp" value="0" min="0" step="0.5" id="xp" required="required" aria-required="true">
+    </div>
+    <div class="formbuilder-text form-group field-cross-training">
+        <label for="cross-training" class="formbuilder-text-label">Cross-training at Tina’s not only offers greater schedule flexibility, but also comes with increase pay. Are you interested in broadening your skill set into bartending or cooking?<span class="formbuilder-required">*</span></label>
+        <input type="text" class="form-control" name="cross-training" id="cross-training" required="required" aria-required="true">
+    </div>
+    <div class="formbuilder-textarea form-group field-why">
+        <label for="why" class="formbuilder-textarea-label">Why choose Tina’s? What piqued your curiosity about us?</label>
+        <textarea type="textarea" class="form-control" name="why" rows="2" id="why"></textarea>
+    </div>
+    <div class="formbuilder-textarea form-group field-achieve">
+        <label for="achieve" class="formbuilder-textarea-label">What do you hope to achieve in your next job?
+            <br>
+        </label>
+        <textarea type="textarea" class="form-control" name="achieve" rows="2" id="achieve"></textarea>
+    </div>
+    <div class="formbuilder-textarea form-group field-strengths">
+        <label for="strengths" class="formbuilder-textarea-label">What can we expect to learn from you? What do you consider your strongest attributes? What specific talents do you bring to the table that will benefit both our guests and our team right from the start?</label>
+        <textarea type="textarea" class="form-control" name="strengths" rows="4" id="strengths"></textarea>
+    </div>
+    <div class="formbuilder-textarea form-group field-hospitality">
+        <label for="hospitality" class="formbuilder-textarea-label">How might you describe the idea of hospitality?
+            <br>
+        </label>
+        <textarea type="textarea" class="form-control" name="hospitality" rows="2" id="hospitality"></textarea>
+    </div>
+    <div class="formbuilder-textarea form-group field-memorable">
+        <label for="memorable" class="formbuilder-textarea-label">Share with us your most memorable dining or drinking experience of the year. Where did it take place, and what made it stand out as exceptional?
+        </label>
+        <textarea type="textarea" class="form-control" name="memorable" rows="4" id="memorable"></textarea>
+    </div>
+    <div class="formbuilder-textarea form-group field-work-life">
+        <label for="work-life" class="formbuilder-textarea-label">How do you prioritize self care and work-life balance outside of your job?</label>
+        <textarea type="textarea" class="form-control" name="work-life" rows="2" id="work-life"></textarea>
+    </div>
+    <div class="formbuilder-textarea form-group field-goals">
+        <label for="goals" class="formbuilder-textarea-label">What are your personal, career, and community goals for the next three years?</label>
+        <textarea type="textarea" class="form-control" name="goals" rows="4" id="goals"></textarea>
+    </div>
+    <div class="formbuilder-textarea form-group field-obligations">
+        <label for="obligations" class="formbuilder-textarea-label">Life can be busy, what other commitments do you have in your life right now?
+            <br>
+        </label>
+        <textarea type="textarea" class="form-control" name="obligations" rows="2" id="obligations"></textarea>
+    </div>
+    <div class="formbuilder-file form-group field-resume">
+        <label for="resume" class="formbuilder-file-label">Please upload your resume and make sure it includes your contact information and at least two recent references we can contact.
+            <br>
+        </label>
+        <input type="file" class="form-control" name="resume" multiple="false" id="resume">
+        <input type="submit" name="submit" value="Submit Application">
+    </div>
+</div>
+</body>
+</html>
